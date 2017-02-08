@@ -1,0 +1,8 @@
+---
+ - hosts: webservers
+   remote_user: root
+   tasks:
+     - name: Installs python-simplejson in RAW mode
+       raw: yum -y install python-simplejson
+
+ 
